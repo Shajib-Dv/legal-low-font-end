@@ -38,7 +38,7 @@
       }
       .lg-bg-img {
         background-image: url("./images/rectangle4.png"),
-          linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+          linear-gradient(to bottom, #0202027e 0%, rgba(21, 19, 19, 0.784) 100%);
         background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-position: center;
@@ -246,9 +246,9 @@
     <!-- main section  -->
     <main>
       <!-- The Legal Practice Area -->
-      <section class="mt-5 text-center">
+      <section class="my-5 text-center">
         <h1 class="fs-2 fw-bold">The Legal Practice Area</h1>
-        <p>
+        <p class="fw-semibold">
           The legal Practice means Practice more and more dont get pore. I'm
           pretty cool in Tailwind but bootstrap make me blind.
         </p>
@@ -381,6 +381,129 @@
           </div>
         </div>
       </section>
+
+      <!-- client feedback -->
+      <section class="my-5 text-center">
+        <h1 class="fw-bold">What Our Client Say</h1>
+        <p class="fw-semibold py-3">
+          There you see a summery of our service by feedback our clients
+        </p>
+
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide my-5">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <div class="carousel-caption">
+                <div>
+                  <div>
+                    <img
+                      src="./images/admin.jpeg"
+                      alt=""
+                      class="rounded-circle"
+                      width="180px"
+                      height="180px"
+                    />
+                  </div>
+                  <h1>Shajib Hossain</h1>
+                  <p>future Developer</p>
+                </div>
+                <p>
+                  low can be low but law can't be take. but if you want to low
+                  than low it.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <div class="carousel-caption d-md-block">
+                <div>
+                  <div>
+                    <img
+                      src="./images/admin.jpeg"
+                      alt=""
+                      class="rounded-circle"
+                      width="180px"
+                      height="180px"
+                    />
+                  </div>
+                  <h1>Shajib Hossain</h1>
+                  <p>future Developer</p>
+                </div>
+                <p>
+                  low can be low but law can't be take. but if you want to low
+                  than low it.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <div>
+                  <div>
+                    <img
+                      src="./images/admin.jpeg"
+                      alt=""
+                      class="rounded-circle"
+                      width="180px"
+                      height="180px"
+                    />
+                  </div>
+                  <h1>Shajib Hossain</h1>
+                  <p>future Developer</p>
+                </div>
+                <p>
+                  low can be low but law can't be take. but if you want to low
+                  than low it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Any Questions -->
+      <section></section>
     </main>
 
     <!-- footer section  -->
