@@ -43,6 +43,24 @@
         background-repeat: no-repeat;
         background-position: center;
       }
+      .col {
+        transition: all 0.5s;
+      }
+      .col:hover {
+        background-color: #b9b4b47b;
+        border-radius: 10px;
+        transition: all 0.3s;
+      }
+      @media screen and (max-width: 576px) {
+        .banner-section {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 577px) {
+        .banner-section {
+          width: 75%;
+        }
+      }
     </style>
   </head>
   <body class="container lg-primary-font">
@@ -218,7 +236,7 @@
           class="rounded lg-bg-img mt-5 xl-p-5 text-white"
           style="height: 500px"
         >
-          <div class="mx-auto text-center">
+          <div class="mx-auto text-center banner-section">
             <div class="">
               <h1 class="pt-5 fw-bold" style="font-size: 4rem">
                 We Provide Effective Legal Solutions
@@ -256,7 +274,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="h-25 d-flex justify-content-center">
                 <img
                   src="./images/haturi.png"
                   class="card-img-top w-25"
@@ -277,7 +295,7 @@
           </div>
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="h-25 d-flex justify-content-center">
                 <img
                   src="./images/handcup.png"
                   class="card-img-top w-25"
@@ -298,7 +316,7 @@
           </div>
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="h-25 d-flex justify-content-center">
                 <img
                   src="./images/layer1.png"
                   class="card-img-top w-25"
@@ -319,7 +337,7 @@
           </div>
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="h-25 d-flex justify-content-center">
                 <img
                   src="./images/palla.png"
                   class="card-img-top w-25"
@@ -340,17 +358,17 @@
           </div>
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="h-25 d-flex justify-content-center">
                 <img
-                  src="./images/heard.png"
+                  src="./images/palla.png"
                   class="card-img-top w-25"
                   alt="..."
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold pt-3">Divorce Law</h5>
+                <h5 class="card-title fw-bold pt-3">Education Law</h5>
                 <p class="card-text py-3 fs-semibold">
-                  Our Divorce low is very simple. Pay bill first service will
+                  Our Education low is very simple. Pay bill first service will
                   come first. Get our service to joining us. service can't serve
                   you until you need it, but you will need it because we want
                   to.
@@ -359,9 +377,10 @@
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="h-100 text-center p-4">
-              <div class="d-flex justify-content-center">
+              <div class="d-25 d-flex justify-content-center">
                 <img
                   src="./images/task.png"
                   class="card-img-top w-25"
@@ -415,6 +434,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <!-- background image use in this section lg-bg-img is a custom bg-img  -->
               <div class="lg-bg-img rounded" style="height: 400px"></div>
               <div class="carousel-caption">
                 <div>
@@ -437,8 +457,9 @@
               </div>
             </div>
             <div class="carousel-item">
+              <!-- background image use in this section lg-bg-img is a custom bg-img   -->
               <div class="lg-bg-img rounded" style="height: 400px"></div>
-              <div class="carousel-caption d-md-block">
+              <div class="carousel-caption">
                 <div>
                   <div>
                     <img
@@ -459,8 +480,9 @@
               </div>
             </div>
             <div class="carousel-item">
+              <!-- background image use in this section lg-bg-img is a custom bg-img -->
               <div class="lg-bg-img rounded" style="height: 400px"></div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <div>
                   <div>
                     <img
@@ -503,7 +525,145 @@
       </section>
 
       <!-- Frequently Asked Any Questions -->
-      <section></section>
+      <section class="my-5 text-center">
+        <h1 class="fd-bold pt-5">Frequently Asked Any Questions</h1>
+        <p class="fw-semibold py-3">
+          This section is recommended by author and I wanna make it more
+          effective. but it very difficult for me because I don't understand
+          Bootstrap so.
+        </p>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-tertiary">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button bg-white text-black fs-3 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      1. What is the difference between Flex and Grid ?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p class="text-start fw-semibold">
+                        The basic difference between Flexbox and Grid is Flexbox
+                        is one dimensional and Grid is two-dimensional. It means
+                        you can handle row and column by using grid but not in
+                        Flexbox.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed bg-white text-black fs-3 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      2. What is the purpose of media query ?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p class="fw-semibold text-start">
+                        Media query is used for make a web responsive. there are
+                        many CSS framework for make responsive web. But media
+                        query is the main/root concept for make responsive web.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="accordion-item bg-tertiary">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed bg-white fs-3 fw-bold text-black"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      3. How does CSS box-model work ?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p class="fw-semibold text-start">
+                        A box in CSS consists of a content area and there will
+                        be any content like text,img or more. CSS box model work
+                        by applying margin padding and border around the
+                        content. The nearest element of a content is padding and
+                        the other hand is margin.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="accordion-item bg-tertiary">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed bg-white fs-3 fw-bold text-black"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      4. What is semantic tag ?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <p class="fw-semibold text-start">
+                        Semantic tag is a kind of meaningful tag. Semantic tag
+                        define the meaning of content they contain. header main
+                        article footer are semantic tag and if see them you can
+                        easily understand what they contain.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./images/question.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer section  -->
