@@ -35,6 +35,9 @@
         background-color: #b68c5a;
         color: white;
       }
+      .lg-bg-primary:hover {
+        background-color: #c78d46;
+      }
       .dropdown-side-arrow::after {
         content: url("./images/side-arow.png");
         display: inline-block;
@@ -68,9 +71,9 @@
       }
     </style>
   </head>
-  <body class="container lg-primary-font">
+  <body class="lg-primary-font">
     <!-- header section  -->
-    <header>
+    <header class="container">
       <!-- nav section  -->
       <nav class="navbar navbar-expand-lg d-flex justify-content-center">
         <div class="container-fluid">
@@ -258,6 +261,7 @@
                 name=""
                 id="search"
                 placeholder="Search your services"
+                style="outline: none"
               />
               <button class="btn lg-bg-primary">Search</button>
             </form>
@@ -267,7 +271,7 @@
     </header>
 
     <!-- main section  -->
-    <main>
+    <main class="container">
       <!-- The Legal Practice Area -->
       <section class="my-5 text-center">
         <h1 class="fs-2 fw-bold">The Legal Practice Area</h1>
@@ -741,7 +745,73 @@
     </main>
 
     <!-- footer section  -->
-    <footer></footer>
+    <footer class="bg-black text-white p-5">
+      <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+        <div class="col my-3">
+          <div>
+            <img src="./images/jts.png" alt="" />
+            <p class="fw-semibold py-3 text-secondary">
+              Justice can be practice, without practice you can not serve
+              justice. For more justice do practice. Justice can maintain our
+              law and law can control justice.
+            </p>
+          </div>
+        </div>
+        <div class="col my-3">
+          <h2>Useful Link</h2>
+          <div class="d-flex flex-column">
+            <a class="text-secondary fw-semibold text-decoration-none" href="#"
+              >Home</a
+            >
+            <a class="text-secondary fw-semibold text-decoration-none" href="#"
+              >About us</a
+            >
+            <a class="text-secondary fw-semibold text-decoration-none" href="#"
+              >Contact us</a
+            >
+            <a class="text-secondary fw-semibold text-decoration-none" href="#"
+              >Blog</a
+            >
+            <a class="text-secondary fw-semibold text-decoration-none" href="#"
+              >Resources</a
+            >
+          </div>
+        </div>
+        <div class="col my-3">
+          <h2>Contact now</h2>
+          <address class="text-secondary">
+            <h5>BG/23 Green Road 2nd Flor Bakkar.Peland</h5>
+            <p>
+              Mobile: 017*******25 <br />
+              Tel: 1324878** <br />
+              Email: infro@gamil.com <br />
+              Email: infro-pg@gamil.com
+            </p>
+          </address>
+        </div>
+        <div class="col my-3">
+          <h3>Subscribe</h3>
+          <p class="text-secondary">For More Information Please Subscribe Us</p>
+          <div class="d-flex">
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                class="h-100 rounded"
+                style="outline: none"
+              />
+            </div>
+            <div style="margin-left: -5px">
+              <button class="btn lg-bg-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS  -->
     <script
