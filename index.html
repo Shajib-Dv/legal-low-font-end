@@ -25,17 +25,17 @@
     ></script>
     <!-- Custom Styles -->
     <style>
-      .lg-primary-font {
+      .law-primary-font {
         font-family: "EB Garamond", serif;
       }
-      .lg-primary-text {
-        color: #414040;
+      .law-primary-text {
+        color: #825114;
       }
-      .lg-bg-primary {
+      .law-bg-primary {
         background-color: #b68c5a;
         color: white;
       }
-      .lg-bg-primary:hover {
+      .law-bg-primary:hover {
         background-color: #c78d46;
         color: white;
       }
@@ -45,17 +45,17 @@
         position: absolute;
         top: 13px;
       }
-      .lg-bg-img {
+      .law-bg-img {
         background-image: url("./images/rectangle4.png"),
           linear-gradient(to bottom, #0202027e 0%, rgba(21, 19, 19, 0.784) 100%);
         background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-position: center;
       }
-      .lg-col {
+      .law-col {
         transition: all 0.5s;
       }
-      .lg-col:hover {
+      .law-col:hover {
         background-color: #b9b4b47b;
         border-radius: 10px;
         transition: all 0.3s;
@@ -64,15 +64,22 @@
         .banner-section {
           width: 100%;
         }
+        .sm-reverse {
+          display: flex;
+          flex-direction: column-reverse;
+        }
       }
       @media screen and (min-width: 577px) {
         .banner-section {
-          width: 75%;
+          width: 70%;
+        }
+        .sm-reverse {
+          flex-direction: row;
         }
       }
     </style>
   </head>
-  <body class="lg-primary-font">
+  <body class="law-primary-font">
     <!-- header section  -->
 
     <header class="container">
@@ -81,7 +88,9 @@
         <div class="container-fluid">
           <div class="d-flex gap-2 justify-content-center align-items-center">
             <img src="./images/haturi.png" alt="" class="w-25" />
-            <a class="navbar-brand fw-bold fs-1 lg-primary-text" href="#"
+            <a
+              class="fw-bold fs-1 text-decoration-none law-primary-text"
+              href="#"
               >Justice</a
             >
           </div>
@@ -155,8 +164,8 @@
                   Blog
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Read More</a></li>
-                  <li><a class="dropdown-item" href="#"></a>Inform us</li>
+                  <li><a class="dropdown-item" href="#">Read more </a></li>
+                  <li><a class="dropdown-item" href="#">Inform us</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#"
@@ -190,7 +199,7 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn lg-bg-primary"
+              class="btn law-bg-primary"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -230,7 +239,7 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn lg-bg-primary">
+                    <button type="button" class="btn law-bg-primary">
                       Save changes
                     </button>
                   </div>
@@ -244,13 +253,14 @@
       <!-- banner -->
       <section>
         <div
-          class="rounded lg-bg-img mt-5 xl-p-5 text-white"
+          class="rounded d-flex align-items-center law-bg-img mt-5 text-white"
           style="height: 500px"
         >
           <div class="mx-auto text-center banner-section">
             <div class="">
-              <h1 class="pt-5 fw-bold" style="font-size: 4rem">
-                We Provide Effective Legal Solutions
+              <h1 class="fw-bold" style="font-size: 4rem">
+                We Provide <span class="law-primary-text">Effective</span> Legal
+                Solutions
               </h1>
               <p>
                 We are committed to help you. We are provide our best service to
@@ -266,7 +276,7 @@
                 placeholder="Search your services"
                 style="outline: none"
               />
-              <button class="btn lg-bg-primary">Search</button>
+              <button class="btn law-bg-primary">Search</button>
             </form>
           </div>
         </div>
@@ -279,14 +289,19 @@
       <!-- The Legal Practice Area -->
 
       <section class="my-5 text-center">
-        <h1 class="fs-1 fw-bold">The Legal Services We Provide</h1>
+        <h1 class="fs-1 fw-bold">
+          The <span class="law-primary-text">Legal Services</span> We Provide
+        </h1>
         <p class="fw-semibold">
           The legal Practice means Practice more and more dont get pore. I'm
           pretty cool in Tailwind but bootstrap make me blind.
         </p>
 
-        <div class="container row row-cols-1 row-cols-md-3 g-4 mt-5">
-          <div class="col lg-col">
+        <div
+          class="container row row-cols-1 row-cols-md-3 g-4 mt-5"
+          style="width: auto"
+        >
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="h-25 d-flex justify-content-center">
                 <img
@@ -296,7 +311,9 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold pt-3">Business Law</h5>
+                <h5 class="card-title law-primary-text fw-bold pt-3">
+                  Business Law
+                </h5>
                 <p class="card-text py-3 fs-semibold">
                   Our Business low is very simple. Pay bill first service will
                   come first. Get our service to joining us. service can't serve
@@ -307,7 +324,7 @@
               </div>
             </div>
           </div>
-          <div class="col lg-col">
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="h-25 d-flex justify-content-center">
                 <img
@@ -317,7 +334,9 @@
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold pt-3">Criminal Law</h5>
+                <h5 class="card-title law-primary-text fw-bold pt-3">
+                  Criminal Law
+                </h5>
                 <p class="card-text py-3 fs-semibold">
                   Our Criminal low is very simple. Pay bill first service will
                   come first. Get our service to joining us. service can't serve
@@ -328,7 +347,7 @@
               </div>
             </div>
           </div>
-          <div class="col lg-col">
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="h-25 d-flex justify-content-center">
                 <img
@@ -349,7 +368,7 @@
               </div>
             </div>
           </div>
-          <div class="col lg-col">
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="h-25 d-flex justify-content-center">
                 <img
@@ -370,19 +389,19 @@
               </div>
             </div>
           </div>
-          <div class="col lg-col">
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="h-25 d-flex justify-content-center">
                 <img
-                  src="./images/palla.png"
+                  src="./images/heard.png"
                   class="card-img-top w-25"
                   alt="..."
                 />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold pt-3">Education Law</h5>
+                <h5 class="card-title fw-bold pt-3">Divorce Law</h5>
                 <p class="card-text py-3 fs-semibold">
-                  Our Education low is very simple. Pay bill first service will
+                  Our Divorce low is very simple. Pay bill first service will
                   come first. Get our service to joining us. service can't serve
                   you until you need it, but you will need it because we want
                   to.
@@ -392,7 +411,7 @@
             </div>
           </div>
 
-          <div class="col lg-col">
+          <div class="col law-col">
             <div class="h-100 text-center p-4">
               <div class="d-25 d-flex justify-content-center">
                 <img
@@ -418,7 +437,9 @@
       <!-- client feedback -->
 
       <section class="my-5 text-center">
-        <h1 class="fw-bold fs-1">What Our Client Say</h1>
+        <h1 class="fw-bold fs-1">
+          What Our <span class="law-primary-text">Client Say</span>
+        </h1>
         <p class="fw-semibold py-3">
           There you see a summery of our service by feedback our clients
         </p>
@@ -449,8 +470,8 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <!-- background image use in this section lg-bg-img is a custom bg-img  -->
-              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <!-- background image use in this section law-bg-img is a custom bg-img  -->
+              <div class="law-bg-img rounded" style="height: 400px"></div>
               <div class="carousel-caption">
                 <div>
                   <div>
@@ -472,8 +493,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <!-- background image use in this section lg-bg-img is a custom bg-img   -->
-              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <!-- background image use in this section law-bg-img is a custom bg-img   -->
+              <div class="law-bg-img rounded" style="height: 400px"></div>
               <div class="carousel-caption">
                 <div>
                   <div>
@@ -495,8 +516,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <!-- background image use in this section lg-bg-img is a custom bg-img -->
-              <div class="lg-bg-img rounded" style="height: 400px"></div>
+              <!-- background image use in this section law-bg-img is a custom bg-img -->
+              <div class="law-bg-img rounded" style="height: 400px"></div>
               <div class="carousel-caption">
                 <div>
                   <div>
@@ -542,7 +563,9 @@
       <!-- Frequently Asked Any Questions -->
 
       <section class="my-5 text-center">
-        <h1 class="fw-bold fs-1 pt-5">Frequently Asked Any Questions</h1>
+        <h1 class="fw-bold fs-1 pt-5">
+          <span class="law-primary-text">Frequently</span> Asked Any Questions
+        </h1>
         <p class="fw-semibold py-3">
           This section is recommended by author and I wanna make it more
           effective. but it very difficult for me because I don't understand
@@ -550,8 +573,8 @@
         </p>
 
         <div class="container my-5">
-          <div class="row">
-            <div class="col-md-8">
+          <div class="row sm-reverse">
+            <div class="col-md-6 mt-2">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item bg-tertiary">
                   <h2 class="accordion-header" id="headingOne">
@@ -676,7 +699,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <img src="./images/question.png" alt="" class="w-100" />
             </div>
           </div>
@@ -686,15 +709,19 @@
       <!-- Bonus section  -->
 
       <section class="my-5 text-center">
-        <h1 class="fw-bold">Meet Our Lawyer's</h1>
+        <h1 class="fw-bold">
+          Meet Our <span class="law-primary-text">Lawyer's</span>
+        </h1>
         <p class="fw-semibold">World Most Wanted Lawyer is Here.</p>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="./images/lawer.webp" class="card-img-top" alt="..." />
+              <img src="./images/lwyer-1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title fs-2 fw-bold">M.Bakka</h5>
+                <h5 class="card-title law-primary-text fs-2 fw-bold">
+                  M. Bakka
+                </h5>
                 <p class="card-text fw-semibold">
                   LLB from Adu Varsity. Meet me before 9 either you have to pay
                   penalty. I'm the lower price Lawyer of the year. Need help
@@ -702,7 +729,7 @@
                 </p>
               </div>
               <div
-                class="card-footer d-flex gap-3 justify-content-center lg-bg-primary"
+                class="card-footer d-flex gap-3 justify-content-center law-bg-primary"
               >
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -712,9 +739,11 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="./images/lawer.webp" class="card-img-top" alt="..." />
+              <img src="./images/lawyer-3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title fs-2 fw-bold">M.Raka</h5>
+                <h5 class="card-title law-primary-text fs-2 fw-bold">
+                  Ex. Shefali
+                </h5>
                 <p class="card-text fw-semibold">
                   LLB from Adu Varsity. Meet me before 9 either you have to pay
                   penalty. I'm the lower price Lawyer of the year. Need help
@@ -722,7 +751,7 @@
                 </p>
               </div>
               <div
-                class="card-footer d-flex gap-3 justify-content-center lg-bg-primary"
+                class="card-footer d-flex gap-3 justify-content-center law-bg-primary"
               >
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -732,9 +761,11 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="./images/lawer.webp" class="card-img-top" alt="..." />
+              <img src="./images/lawyer-2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title fs-2 fw-bold">Mx.kakka</h5>
+                <h5 class="card-title law-primary-text fs-2 fw-bold">
+                  Mx. kakka
+                </h5>
                 <p class="card-text fw-semibold">
                   LLB from Adu Varsity. Meet me before 9 either you have to pay
                   penalty. I'm the lower price Lawyer of the year. Need help
@@ -742,7 +773,7 @@
                 </p>
               </div>
               <div
-                class="card-footer d-flex gap-3 justify-content-center lg-bg-primary"
+                class="card-footer d-flex gap-3 justify-content-center law-bg-primary"
               >
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -762,7 +793,7 @@
           <div>
             <img src="./images/jts.png" alt="" />
             <p class="fw-semibold py-3 text-secondary">
-              Justice can be practice, without practice you can not serve
+              Justice Should be practice, without practice you can not serve
               justice. For more justice do practice. Justice can maintain our
               law and law can control justice.
             </p>
@@ -815,7 +846,7 @@
               />
             </div>
             <div style="margin-left: -5px">
-              <button class="btn lg-bg-primary">
+              <button class="btn law-bg-primary">
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
             </div>
